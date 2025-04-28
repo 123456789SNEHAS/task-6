@@ -1,0 +1,20 @@
+CREATE DATABASE ecommerce;
+
+USE ecommerce;
+
+CREATE TABLE products (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    category VARCHAR(50),
+    price DOUBLE,
+    quantity INT,
+    description TEXT
+);
+
+CREATE TABLE buyers (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(20),
+    address TEXT
+);
